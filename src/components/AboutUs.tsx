@@ -12,7 +12,9 @@ export default function AboutUs() {
       </div>
 
       <div
-        className={'bg-primary p-14 flex flex-col items-center justify-center'}
+        className={
+          'bg-primary p-7 lg:p-14 flex flex-col items-center justify-center'
+        }
       >
         <div
           className={

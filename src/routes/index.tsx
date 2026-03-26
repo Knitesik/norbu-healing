@@ -22,7 +22,7 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
-    <main className="page-wrap">
+    <main className="page-wrap pt-14">
       <section className={'max-w-full'}>
         <HeroSectionNew />
       </section>

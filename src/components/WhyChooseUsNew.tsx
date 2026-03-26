@@ -11,9 +11,13 @@ const points = [
 export default function WhyChooseUsNew() {
   return (
     <div className={'grid lg:grid-cols-2 text-primary-foreground'}>
-      <div className={'bg-primary py-10 grid grid-cols-5 place-content-center'}>
+      <div
+        className={
+          'bg-primary py-10 px-10 lg:px-0 grid lg:grid-cols-5 place-content-center'
+        }
+      >
         <div className={'col-span-3 col-start-2'}>
-          <h2 className={'text-4xl text-primary-foreground leading-17 mb-8'}>
+          <h2 className={'text-4xl text-primary-foreground leading-17 lg:mb-8'}>
             Why Choose Us
           </h2>
           <ul className={'text-lg space-y-4'}>

@@ -1,10 +1,9 @@
 import { buttonVariants } from '@/components/ui/button'
-import { Menu } from 'lucide-react'
 import ThemeToggle from '#/components/ThemeToggle.tsx'
 
 export default function Header() {
   return (
-    <header className="w-full border-b border-b-border sticky z-50 top-0 bg-background">
+    <header className="w-full border-b border-b-border fixed z-50 top-0 bg-background">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-4">
         <h3>Logo</h3>
         <div className="flex items-center gap-1">
