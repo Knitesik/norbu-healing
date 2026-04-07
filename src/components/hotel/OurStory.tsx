@@ -1,5 +1,5 @@
-import { Badge } from '@/components/ui/badge'
-import { Card } from '@/components/ui/card'
+import { Badge } from '#/components/ui/badge.tsx'
+import { Card } from '#/components/ui/card.tsx'
 import { Users, Leaf, Award, Gift } from 'lucide-react'
 
 const stats = [

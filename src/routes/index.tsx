@@ -1,13 +1,12 @@
 import { createFileRoute } from '@tanstack/react-router'
-import HeroSectionNew from '#/components/HeroSectionNew.tsx'
-import AboutUs from '#/components/AboutUs.tsx'
-import WhyChooseUsNew from '#/components/WhyChooseUsNew.tsx'
-import RoomTypes from '#/components/RoomTypes.tsx'
-import HotelFeatures from '#/components/HotelFeatures.tsx'
-import HotelDining from '#/components/HotelDining.tsx'
+import HeroSection from '#/components/home/HeroSection.tsx'
+import StatsBar from '#/components/home/StatsBar.tsx'
+import AboutSection from '#/components/home/AboutSection.tsx'
+import OurPhilosophy from '#/components/home/OurPhilosophy.tsx'
+import FeaturesComponent from '#/components/home/FeaturesComponent.tsx'
+import WhyChooseUs from '#/components/home/WhyChooseUs.tsx'
 import ImageMarquee from '#/components/ImageMarquee.tsx'
-import OurServicesNew from '#/components/OurServicesNew.tsx'
-import BookYourStay from '#/components/BookYourStay.tsx'
+import BookYourStay from '#/components/hotel/BookYourStay.tsx'
 
 export const Route = createFileRoute('/')({
   head: () => ({
@@ -22,30 +21,27 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
-    <main className="page-wrap pt-14">
+    <main className={'py-14'}>
       <section className={'max-w-full'}>
-        <HeroSectionNew />
-      </section>
-      <section className={'max-w-full'}>
-        <AboutUs />
+        <HeroSection />
       </section>
       <section className={'max-w-full'}>
-        <WhyChooseUsNew />
+        <StatsBar />
       </section>
       <section className={'max-w-full'}>
-        <RoomTypes />
+        <AboutSection />
       </section>
-      <section className={'linedBackground max-w-full'}>
-        <HotelFeatures />
+      <section className={''}>
+        <OurPhilosophy />
       </section>
-      <section className={'max-w-full!'}>
-        <HotelDining />
+      <section className={'max-w-full bg-primary'}>
+        <FeaturesComponent />
+      </section>
+      <section className={'max-w-full'}>
+        <WhyChooseUs />
       </section>
       <section className={'max-w-full'}>
         <ImageMarquee />
-      </section>
-      <section className={'max-w-full'}>
-        <OurServicesNew />
       </section>
       <section className={'max-w-full'}>
         <BookYourStay />

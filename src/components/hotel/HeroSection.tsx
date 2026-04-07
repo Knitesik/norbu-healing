@@ -1,4 +1,4 @@
-import { buttonVariants } from '@/components/ui/button'
+import { buttonVariants } from '#/components/ui/button.tsx'
 import { StarsIcon } from 'lucide-react'
 import { Badge } from '#/components/ui/badge.tsx'
 import { Link } from '@tanstack/react-router'

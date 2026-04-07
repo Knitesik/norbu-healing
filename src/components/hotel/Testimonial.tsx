@@ -6,7 +6,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel'
+} from '#/components/ui/carousel.tsx'
 import { useIsClient } from '#/hooks/use-is-client.ts'
 
 export default function Testimonial() {

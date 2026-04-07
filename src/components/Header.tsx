@@ -1,5 +1,6 @@
 import { buttonVariants } from '@/components/ui/button'
 import ThemeToggle from '#/components/ThemeToggle.tsx'
+import { Link } from '@tanstack/react-router'
 
 export default function Header() {
   return (
@@ -8,42 +9,18 @@ export default function Header() {
         <h3>Logo</h3>
         <div className="flex items-center gap-1">
           <div className="hidden items-center text-muted-foreground md:inline-flex">
-            <a
-              href="#"
+            <Link
+              to="/hotel"
               className={buttonVariants({ variant: 'ghost', size: 'sm' })}
             >
-              Features
-            </a>
-            <a
-              href="#"
+              Hotel
+            </Link>
+            <Link
+              to="/healing-arts-centre"
               className={buttonVariants({ variant: 'ghost', size: 'sm' })}
             >
-              Pricing
-            </a>
-            <a
-              href="#"
-              className={buttonVariants({ variant: 'ghost', size: 'sm' })}
-            >
-              Blog
-            </a>
-            <a
-              href="#"
-              className={buttonVariants({ variant: 'ghost', size: 'sm' })}
-            >
-              Company
-            </a>
-            <p
-              aria-hidden="true"
-              className="hidden select-none text-border sm:block"
-            >
-              |
-            </p>
-            <a
-              href="#"
-              className={buttonVariants({ variant: 'ghost', size: 'sm' })}
-            >
-              Sign in
-            </a>
+              Healing Arts Centre
+            </Link>
           </div>
           <ThemeToggle />
         </div>
