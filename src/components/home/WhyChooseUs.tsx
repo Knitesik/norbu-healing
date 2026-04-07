@@ -40,12 +40,12 @@ const items = [
 export default function WhyChooseUs() {
   return (
     <div className={'container mx-auto py-14'}>
-      <div className={'grid grid-cols-2 items-end'}>
+      <div className={'grid grid-cols-1 lg:grid-cols-2 gap-6 items-end px-4 lg:px-0'}>
         <div className={'space-y-4'}>
           <p>WHY CHOOSE US</p>
           <h2>The Norbu Difference</h2>
         </div>
-        <div className={'w-2/3'}>
+        <div className={'lg:w-2/3'}>
           <h5>
             Choosing Norbu means choosing a brand that values quality,
             consistency, and care across all services — from the smallest detail
@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
           </h5>
         </div>
       </div>
-      <div className={'grid grid-cols-3 mt-10 gap-10 '}>
+      <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10 px-4 lg:px-0'}>
         {items.map((item, index) => (
           <div key={index} className={'border-t border-t-border p-6 space-y-4'}>
             <h2>0{index + 1}</h2>

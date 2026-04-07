@@ -5,6 +5,8 @@ import AboutSection from '#/components/home/AboutSection.tsx'
 import OurPhilosophy from '#/components/home/OurPhilosophy.tsx'
 import FeaturesComponent from '#/components/home/FeaturesComponent.tsx'
 import WhyChooseUs from '#/components/home/WhyChooseUs.tsx'
+import Testimonials from '#/components/home/Testimonials.tsx'
+import CallToAction from '#/components/home/CallToAction.tsx'
 import ImageMarquee from '#/components/ImageMarquee.tsx'
 import BookYourStay from '#/components/hotel/BookYourStay.tsx'
 
@@ -31,7 +33,7 @@ function App() {
       <section className={'max-w-full'}>
         <AboutSection />
       </section>
-      <section className={''}>
+      <section>
         <OurPhilosophy />
       </section>
       <section className={'max-w-full bg-primary'}>
@@ -39,6 +41,12 @@ function App() {
       </section>
       <section className={'max-w-full'}>
         <WhyChooseUs />
+      </section>
+      <section className={'max-w-full'}>
+        <Testimonials />
+      </section>
+      <section className={'max-w-full'}>
+        <CallToAction />
       </section>
       <section className={'max-w-full'}>
         <ImageMarquee />

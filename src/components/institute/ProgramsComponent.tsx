@@ -4,38 +4,28 @@ import { ArrowRight, Check } from 'lucide-react'
 
 const items = [
   {
-    title: 'Signature',
-    subtitle: 'Traditional Therapeutic Massage',
+    title: 'Beauty & Cosmetology',
+    subtitle: 'Professional Beauty Training',
     description:
-      "Deep tissue work grounded in traditional techniques, targeting tension and restoring the body's natural energy flow and balance.",
+      'Comprehensive training in hair styling, skincare, makeup artistry, and nail care — preparing students for careers in the beauty industry.',
   },
-
   {
-    title: 'Sensory',
-    subtitle: 'Aromatherapy Massage',
+    title: 'Wellness Therapy',
+    subtitle: 'Therapeutic Massage & Healing',
     description:
-      'A gentle, full-body massage using premium essential oils chosen for their calming and restorative properties.',
+      'Learn traditional and modern therapeutic techniques including massage, aromatherapy, and holistic healing practices.',
   },
-
   {
-    title: 'Detox',
-    subtitle: 'Body Treatments & Detox',
+    title: 'Hospitality Training',
+    subtitle: 'Service Excellence Programme',
     description:
-      "Natural botanicals in wraps and scrubs to purify the skin and stimulate the body's lymphatic system.",
+      'Develop skills in guest relations, front desk management, food & beverage service, and hospitality operations.',
   },
-
   {
-    title: 'Wellness',
-    subtitle: 'Stress Relief Therapies',
+    title: 'Advanced Certification',
+    subtitle: 'Specialist Programmes',
     description:
-      'Personalised sessions combining pressure point work, breathwork guidance, and gentle therapeutic touch.',
-  },
-
-  {
-    title: 'Holistic',
-    subtitle: 'Holistic Healing Sessions',
-    description:
-      'Whole-body sessions drawing on multiple modalities for physical, mental, and energetic balance.',
+      'Advanced courses for practising professionals looking to specialise in areas such as bridal styling, advanced skincare, or spa management.',
   },
 ]
 
@@ -89,7 +79,7 @@ function FeatureBlock({
           </ul>
         )}
         <a href="#" className={buttonVariants({ variant: 'secondary' })}>
-          <span>Get started</span>
+          <span>Learn More</span>
           <ArrowRight className="size-4" />
         </a>
       </div>
@@ -97,12 +87,12 @@ function FeatureBlock({
   )
 }
 
-export default function TreatmentComponent() {
+export default function ProgramsComponent() {
   return (
     <div className="mx-auto max-w-4xl text-center text-primary-foreground px-4 py-20">
       <span className={'space-y-2'}>
-        <p className={'text-primary-foreground'}>Treatments</p>
-        <h2 className="">Therapies Designed to Restore You</h2>
+        <p className={'text-primary-foreground'}>Our Programmes</p>
+        <h2 className="">Courses Designed to Build Careers</h2>
       </span>
       <div className={'mt-20 space-y-20 text-start'}>
         {items.map((item, index) => (

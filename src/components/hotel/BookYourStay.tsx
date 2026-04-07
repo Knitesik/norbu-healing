@@ -27,7 +27,7 @@ const contactDetails = [
 export default function BookYourStay() {
   return (
     <div className={'grid lg:grid-cols-2 bg-primary'}>
-      <div className={'p-10 *:text-primary-foreground space-y-8'}>
+      <div className={'p-6 md:p-10 *:text-primary-foreground space-y-8'}>
         <h2 className={'text-4xl text-primary-foreground leading-17'}>
           Book Your Stay Today!
         </h2>

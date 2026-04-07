@@ -4,38 +4,34 @@ import { ArrowRight, Check } from 'lucide-react'
 
 const items = [
   {
-    title: 'Signature',
-    subtitle: 'Traditional Therapeutic Massage',
+    title: 'Hair Styling',
+    subtitle: 'Cuts, Colour & Styling',
     description:
-      "Deep tissue work grounded in traditional techniques, targeting tension and restoring the body's natural energy flow and balance.",
+      'From precision cuts to creative colouring and styling, our expert stylists craft looks that suit your personality and lifestyle.',
   },
-
   {
-    title: 'Sensory',
-    subtitle: 'Aromatherapy Massage',
+    title: 'Skincare',
+    subtitle: 'Facials & Skin Treatments',
     description:
-      'A gentle, full-body massage using premium essential oils chosen for their calming and restorative properties.',
+      'Rejuvenating facial treatments using premium products to cleanse, nourish, and restore your natural glow.',
   },
-
   {
-    title: 'Detox',
-    subtitle: 'Body Treatments & Detox',
+    title: 'Nail Art',
+    subtitle: 'Manicure & Pedicure',
     description:
-      "Natural botanicals in wraps and scrubs to purify the skin and stimulate the body's lymphatic system.",
+      'Professional nail care and creative nail art services to keep your hands and feet looking polished and beautiful.',
   },
-
   {
-    title: 'Wellness',
-    subtitle: 'Stress Relief Therapies',
+    title: 'Bridal',
+    subtitle: 'Bridal & Occasion Packages',
     description:
-      'Personalised sessions combining pressure point work, breathwork guidance, and gentle therapeutic touch.',
+      'Complete beauty packages for weddings and special occasions — hair, makeup, skincare, and nails, all in one place.',
   },
-
   {
-    title: 'Holistic',
-    subtitle: 'Holistic Healing Sessions',
+    title: 'Grooming',
+    subtitle: 'Men\'s Grooming Services',
     description:
-      'Whole-body sessions drawing on multiple modalities for physical, mental, and energetic balance.',
+      'Professional grooming services for men including haircuts, beard styling, facials, and skincare treatments.',
   },
 ]
 
@@ -89,7 +85,7 @@ function FeatureBlock({
           </ul>
         )}
         <a href="#" className={buttonVariants({ variant: 'secondary' })}>
-          <span>Get started</span>
+          <span>Book Now</span>
           <ArrowRight className="size-4" />
         </a>
       </div>
@@ -97,12 +93,12 @@ function FeatureBlock({
   )
 }
 
-export default function TreatmentComponent() {
+export default function ServicesComponent() {
   return (
     <div className="mx-auto max-w-4xl text-center text-primary-foreground px-4 py-20">
       <span className={'space-y-2'}>
-        <p className={'text-primary-foreground'}>Treatments</p>
-        <h2 className="">Therapies Designed to Restore You</h2>
+        <p className={'text-primary-foreground'}>Our Services</p>
+        <h2 className="">Beauty Services Tailored for You</h2>
       </span>
       <div className={'mt-20 space-y-20 text-start'}>
         {items.map((item, index) => (

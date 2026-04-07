@@ -5,6 +5,8 @@ import WhyChooseUsNew from '#/components/hotel/WhyChooseUsNew.tsx'
 import RoomTypes from '#/components/hotel/RoomTypes.tsx'
 import HotelFeatures from '#/components/hotel/HotelFeatures.tsx'
 import HotelDining from '#/components/hotel/HotelDining.tsx'
+import DiningMenu from '#/components/hotel/DiningMenu.tsx'
+import Testimonials from '#/components/hotel/Testimonials.tsx'
 import ImageMarquee from '#/components/ImageMarquee.tsx'
 import OurServicesNew from '#/components/hotel/OurServicesNew.tsx'
 import BookYourStay from '#/components/hotel/BookYourStay.tsx'
@@ -35,10 +37,16 @@ function RouteComponent() {
         <HotelDining />
       </section>
       <section className={'max-w-full'}>
-        <ImageMarquee />
+        <DiningMenu />
       </section>
       <section className={'max-w-full'}>
         <OurServicesNew />
+      </section>
+      <section className={'max-w-full'}>
+        <Testimonials />
+      </section>
+      <section className={'max-w-full'}>
+        <ImageMarquee />
       </section>
       <section className={'max-w-full'}>
         <BookYourStay />
