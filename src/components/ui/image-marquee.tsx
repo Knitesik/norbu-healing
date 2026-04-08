@@ -9,7 +9,7 @@ export interface LogoMarqueeProps {
 
 const SPEED_MAP = {
   slow: '60s',
-  normal: '40s',
+  normal: '80s',
   fast: '20s',
 }
 

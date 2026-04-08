@@ -1,7 +1,7 @@
 export default function RoomTypes() {
   return (
-    <div className={'grid lg:grid-cols-[1fr_5fr_5fr] bg-primary *:p-10'}>
-      <div className={''}>
+    <div className={'grid grid-cols-1 lg:grid-cols-[1fr_5fr_5fr] bg-primary *:p-6 md:*:p-10'}>
+      <div>
         <h2 className={'text-primary-foreground'}>Room Types</h2>
       </div>
       <div
@@ -12,7 +12,7 @@ export default function RoomTypes() {
         <img
           src="https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.30%20PM%20(1).jpeg"
           alt="room type"
-          className={'w-full h-100 bg-muted object-cover'}
+          className={'w-full h-60 md:h-100 bg-muted object-cover'}
         />
         <h3 className={'font-bold'}>Deluxe Couple Room</h3>
         <p className={'text-primary dark:text-primary-foreground'}>
@@ -30,7 +30,7 @@ export default function RoomTypes() {
         <img
           src="https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.30%20PM%20(2).jpeg"
           alt="room type"
-          className={'w-full h-100 bg-muted object-cover object-left'}
+          className={'w-full h-60 md:h-100 bg-muted object-cover object-left'}
         />
         <h3 className={'font-bold'}>Deluxe Twin Room</h3>
         <p className={'text-primary dark:text-primary-foreground'}>

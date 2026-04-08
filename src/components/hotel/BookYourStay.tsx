@@ -1,4 +1,5 @@
-import { Button } from '#/components/ui/button.tsx'
+import { buttonVariants } from '#/components/ui/button.tsx'
+import { Link } from '@tanstack/react-router'
 import { GlobeIcon, MailIcon, MapIcon, PhoneIcon } from 'lucide-react'
 
 const contactDetails = [
@@ -27,8 +28,8 @@ const contactDetails = [
 export default function BookYourStay() {
   return (
     <div className={'grid lg:grid-cols-2 bg-primary'}>
-      <div className={'p-10 *:text-primary-foreground space-y-8'}>
-        <h2 className={'text-4xl text-primary-foreground leading-17'}>
+      <div className={'p-6 md:p-10 *:text-primary-foreground space-y-8'}>
+        <h2 className={'text-3xl lg:text-5xl text-primary-foreground leading-tight lg:leading-17'}>
           Book Your Stay Today!
         </h2>
         <p className={'lg:w-1/2'}>
@@ -36,9 +37,12 @@ export default function BookYourStay() {
           accommodations and personalized services. We look forward to hosting
           you!
         </p>
-        <Button variant={'secondary'} className={'text-accent-foreground!'}>
+        <Link
+          to="/hotel"
+          className={buttonVariants({ variant: 'secondary', className: 'text-accent-foreground!' })}
+        >
           Book Now
-        </Button>
+        </Link>
         <div
           className={
             'w-full bg-background rounded text-primary p-8 grid lg:grid-cols-2 gap-8'

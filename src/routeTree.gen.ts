@@ -9,9 +9,28 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SalonRouteImport } from './routes/salon'
+import { Route as InstituteRouteImport } from './routes/institute'
+import { Route as HealingArtsCentreRouteImport } from './routes/healing-arts-centre'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as HotelIndexRouteImport } from './routes/hotel.index'
 
+const SalonRoute = SalonRouteImport.update({
+  id: '/salon',
+  path: '/salon',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InstituteRoute = InstituteRouteImport.update({
+  id: '/institute',
+  path: '/institute',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HealingArtsCentreRoute = HealingArtsCentreRouteImport.update({
+  id: '/healing-arts-centre',
+  path: '/healing-arts-centre',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -22,35 +41,96 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HotelIndexRoute = HotelIndexRouteImport.update({
+  id: '/hotel/',
+  path: '/hotel/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/healing-arts-centre': typeof HealingArtsCentreRoute
+  '/institute': typeof InstituteRoute
+  '/salon': typeof SalonRoute
+  '/hotel/': typeof HotelIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/healing-arts-centre': typeof HealingArtsCentreRoute
+  '/institute': typeof InstituteRoute
+  '/salon': typeof SalonRoute
+  '/hotel': typeof HotelIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/healing-arts-centre': typeof HealingArtsCentreRoute
+  '/institute': typeof InstituteRoute
+  '/salon': typeof SalonRoute
+  '/hotel/': typeof HotelIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/healing-arts-centre'
+    | '/institute'
+    | '/salon'
+    | '/hotel/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about'
-  id: '__root__' | '/' | '/about'
+  to:
+    | '/'
+    | '/about'
+    | '/healing-arts-centre'
+    | '/institute'
+    | '/salon'
+    | '/hotel'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/healing-arts-centre'
+    | '/institute'
+    | '/salon'
+    | '/hotel/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  HealingArtsCentreRoute: typeof HealingArtsCentreRoute
+  InstituteRoute: typeof InstituteRoute
+  SalonRoute: typeof SalonRoute
+  HotelIndexRoute: typeof HotelIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/salon': {
+      id: '/salon'
+      path: '/salon'
+      fullPath: '/salon'
+      preLoaderRoute: typeof SalonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/institute': {
+      id: '/institute'
+      path: '/institute'
+      fullPath: '/institute'
+      preLoaderRoute: typeof InstituteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/healing-arts-centre': {
+      id: '/healing-arts-centre'
+      path: '/healing-arts-centre'
+      fullPath: '/healing-arts-centre'
+      preLoaderRoute: typeof HealingArtsCentreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -65,12 +145,23 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/hotel/': {
+      id: '/hotel/'
+      path: '/hotel'
+      fullPath: '/hotel/'
+      preLoaderRoute: typeof HotelIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  HealingArtsCentreRoute: HealingArtsCentreRoute,
+  InstituteRoute: InstituteRoute,
+  SalonRoute: SalonRoute,
+  HotelIndexRoute: HotelIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

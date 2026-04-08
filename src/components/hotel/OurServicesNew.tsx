@@ -1,12 +1,12 @@
 export default function OurServicesNew() {
   return (
-    <div className={'text-center lg:text-start lg:grid grid-cols-6'}>
+    <div className={'text-center lg:text-start grid grid-cols-1 lg:grid-cols-6'}>
       <div
         className={
-          'col-span-2 p-10 space-y-4 grid place-content-center *:text-primary-foreground bg-primary'
+          'lg:col-span-2 p-8 lg:p-10 space-y-4 grid place-content-center *:text-primary-foreground bg-primary'
         }
       >
-        <h2 className={'text-5xl text-primary-foreground leading-17'}>
+        <h2 className={'text-3xl lg:text-5xl text-primary-foreground leading-tight lg:leading-17'}>
           Wellness and <br />
           Relaxation
         </h2>
@@ -18,16 +18,16 @@ export default function OurServicesNew() {
           well-being.
         </p>
       </div>
-      <div className={'col-span-2'}>
+      <div className={'lg:col-span-2'}>
         <img
           src={
             'https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.29%20PM%20(7).jpeg'
           }
           alt={'spa'}
-          className={'object-cover h-full'}
+          className={'object-cover w-full h-80 lg:h-full'}
         />
       </div>
-      <div className={'col-span-2 p-10 space-y-8 [&>div]:space-y-4'}>
+      <div className={'lg:col-span-2 p-8 lg:p-10 space-y-8 [&>div]:space-y-4'}>
         <div>
           <h2>Spa and Massage</h2>
           <p>

@@ -12,10 +12,10 @@ export default function HotelDining() {
       </div>
       <div
         className={
-          'bg-primary p-14 flex flex-col justify-center space-y-4 text-center lg:text-start xl:*:w-2/3'
+          'bg-primary p-8 md:p-14 flex flex-col justify-center space-y-4 text-center lg:text-start xl:*:w-2/3'
         }
       >
-        <h2 className={'text-5xl text-primary-foreground leading-17'}>
+        <h2 className={'text-3xl lg:text-5xl text-primary-foreground leading-tight lg:leading-17'}>
           Dining at Norbu Healing Restaurant
         </h2>
         <p className={'text-primary-foreground'}>

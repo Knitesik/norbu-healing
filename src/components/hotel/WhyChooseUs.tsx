@@ -1,13 +1,9 @@
 import {
   BrainIcon,
   CloudIcon,
-  CloudUpload,
-  Folder,
   HeartIcon,
-  Search,
 } from 'lucide-react'
 import { Badge } from '#/components/ui/badge.tsx'
-import { useId } from 'react'
 
 export default function WhyChooseUs() {
   return (

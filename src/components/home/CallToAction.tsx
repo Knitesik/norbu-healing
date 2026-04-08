@@ -1,0 +1,38 @@
+import { buttonVariants } from '#/components/ui/button.tsx'
+import { Link } from '@tanstack/react-router'
+
+export default function CallToAction() {
+  return (
+    <div className="bg-primary">
+      <div className="container mx-auto px-4 py-20 text-center space-y-8">
+        <h2 className="text-primary-foreground text-3xl lg:text-5xl leading-tight">
+          Your Journey to Wellness <br />
+          Starts Here
+        </h2>
+        <p className="text-primary-foreground/80 max-w-2xl mx-auto">
+          Whether you seek relaxation, beauty, comfort, or career growth — Norbu
+          offers a complete experience tailored to your needs. Visit us in the
+          heart of Thimphu and discover the difference.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link
+            to="/hotel"
+            className={buttonVariants({ variant: 'secondary', size: 'lg' })}
+          >
+            Book a Room
+          </Link>
+          <Link
+            to="/healing-arts-centre"
+            className={buttonVariants({
+              variant: 'outline',
+              size: 'lg',
+              className: '',
+            })}
+          >
+            Book a Treatment
+          </Link>
+        </div>
+      </div>
+    </div>
+  )
+}

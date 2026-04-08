@@ -17,7 +17,7 @@ export default function WhyChooseUsNew() {
         }
       >
         <div className={'col-span-3 col-start-2'}>
-          <h2 className={'text-4xl text-primary-foreground leading-17 lg:mb-8'}>
+          <h2 className={'text-3xl lg:text-5xl text-primary-foreground leading-tight lg:leading-17 lg:mb-8'}>
             Why Choose Us
           </h2>
           <ul className={'text-lg space-y-4'}>
