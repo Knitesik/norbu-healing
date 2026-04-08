@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
       <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10 px-4 lg:px-0'}>
         {items.map((item, index) => (
           <div key={index} className={'border-t border-t-border p-6 space-y-4'}>
-            <h2>0{index + 1}</h2>
+            <span className={'text-4xl font-bold tracking-tight block'}>0{index + 1}</span>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
           </div>

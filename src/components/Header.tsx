@@ -3,6 +3,7 @@ import ThemeToggle from '#/components/ThemeToggle.tsx'
 import { Link } from '@tanstack/react-router'
 import { useState } from 'react'
 import { MenuIcon, XIcon } from 'lucide-react'
+import Logo from '/logo.jpeg'
 
 const navLinks = [
   { to: '/' as const, label: 'Home' },
@@ -19,7 +20,7 @@ export default function Header() {
     <header className="w-full border-b border-b-border fixed z-50 top-0 bg-background">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-4">
         <Link to="/">
-          <h3 className="font-bold text-primary">Norbu</h3>
+          <img src={Logo} alt="Logo" className={'h-10 object-cover'} />
         </Link>
         <div className="flex items-center gap-1">
           <nav className="hidden items-center text-muted-foreground lg:inline-flex">
@@ -53,7 +54,10 @@ export default function Header() {
               <Link
                 key={link.to}
                 to={link.to}
-                className={buttonVariants({ variant: 'ghost', size: 'sm' }) + ' justify-start'}
+                className={
+                  buttonVariants({ variant: 'ghost', size: 'sm' }) +
+                  ' justify-start'
+                }
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}

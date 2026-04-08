@@ -19,7 +19,7 @@ export default function HotelFeatures() {
   return (
     <div className={'grid bg-primary p-8 md:p-14 lg:grid-cols-3'}>
       <div className={'col-span-2 text-primary-foreground'}>
-        <h2 className={'font-bold text-5xl mb-8'}>Hotel Features</h2>
+        <h2 className={'text-3xl lg:text-5xl mb-8'}>Hotel Features</h2>
         <ul className={'grid lg:grid-cols-2 gap-4 list-disc ml-4'}>
           {features.map((item, index) => (
             <li key={index}>{item}</li>

@@ -5,9 +5,7 @@ export default function OurApproach() {
     <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 py-16 md:grid-cols-2">
       <div className={'grid gap-4'}>
         <p>Our Approach</p>
-        <h1 className="text-balance font-bold tracking-tighter md:text-4xl">
-          Ancient Wisdom, Modern Healing
-        </h1>
+        <h2>Ancient Wisdom, Modern Healing</h2>
         <p className="mt-2 text-muted-foreground md:text-balance">
           We integrate traditional Bhutanese healing techniques with modern spa
           practices to create therapies that are both effective and deeply
@@ -42,7 +40,7 @@ export default function OurApproach() {
         <img
           loading="lazy"
           decoding="async"
-          src="https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.30%20PM%20(3).jpeg"
+          src="https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-28%20at%202.56.19%20PM.jpeg"
           className="h-96 w-full  object-cover"
           alt="Image"
         />

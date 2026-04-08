@@ -11,6 +11,9 @@ import ImageMarquee from '#/components/ImageMarquee.tsx'
 import BookYourStay from '#/components/hotel/BookYourStay.tsx'
 
 export const Route = createFileRoute('/institute')({
+  head: () => ({
+    meta: [{ title: 'Norbu Healing - Institute' }],
+  }),
   component: RouteComponent,
 })
 

@@ -3,7 +3,7 @@ export default function AboutSection() {
     <div className={'grid lg:grid-cols-2 place-content-center'}>
       <div className={'bg-muted relative'}>
         <img
-          src="https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.29%20PM%20(2).jpeg"
+          src="https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.29%20PM%20(3).jpeg"
           alt="counter"
           className={'object-cover object-left h-100 lg:h-full'}
         />
@@ -15,7 +15,7 @@ export default function AboutSection() {
           }
         >
           <div className={'space-y-4'}>
-            <h2 className={'font-bold text-3xl lg:text-5xl'}>
+            <h2 className={'text-3xl lg:text-5xl'}>
               Where Ancient Wisdom <br /> Meets Modern Care
             </h2>
           </div>

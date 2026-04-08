@@ -19,7 +19,7 @@ export default function StatsBar() {
         >
           <h4
             className={cn(
-              'text-5xl',
+              'text-3xl',
               index % 2 !== 0 && 'lg:text-primary-foreground',
             )}
           >

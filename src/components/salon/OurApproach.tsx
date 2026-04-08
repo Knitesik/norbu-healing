@@ -5,9 +5,7 @@ export default function OurApproach() {
     <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 py-16 md:grid-cols-2">
       <div className={'grid gap-4'}>
         <p>Our Approach</p>
-        <h1 className="text-balance font-bold tracking-tighter md:text-4xl">
-          Where Beauty Meets Expertise
-        </h1>
+        <h2>Where Beauty Meets Expertise</h2>
         <p className="mt-2 text-muted-foreground md:text-balance">
           At Norbu Salon & Beauty, we believe that true beauty is an expression
           of confidence and self-care. Our team of skilled stylists and beauty
@@ -42,7 +40,7 @@ export default function OurApproach() {
         <img
           loading="lazy"
           decoding="async"
-          src="https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.29%20PM%20(4).jpeg"
+          src="https://htj-client.b-cdn.net/norbu-healing/IMG_4302.JPG.jpeg"
           className="h-96 w-full object-cover"
           alt="Salon"
         />

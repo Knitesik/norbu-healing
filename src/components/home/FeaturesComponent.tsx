@@ -1,4 +1,4 @@
-import { Button } from '#/components/ui/button.tsx'
+import { buttonVariants } from '#/components/ui/button.tsx'
 import { Link } from '@tanstack/react-router'
 
 const features = [
@@ -72,13 +72,13 @@ export default function FeaturesComponent() {
       }
     >
       <p className={'text-primary-foreground px-8'}>UNDER ONE UMBRELLA</p>
-      <h2 className={'text-4xl mt-4 text-secondary px-8'}>
+      <h2 className={'mt-4 text-secondary px-8'}>
         Four Pillars of Complete Wellness
       </h2>
       <div className={'grid md:grid-cols-2 text-start my-20 gap-6 px-4 lg:px-0'}>
         {features.map((feature, index) => (
           <div key={index} className={'bg-muted text-primary p-6 md:p-8'}>
-            <h2>{feature.title}</h2>
+            <h3 className="text-2xl font-bold">{feature.title}</h3>
             <h5 className="text-muted-foreground">{feature.subtitle}</h5>
             <p className={'text-primary my-5'}>{feature.description}</p>
             <ul className={'list-disc *:ml-8'}>
@@ -86,8 +86,11 @@ export default function FeaturesComponent() {
                 <li key={subIndex}>{item}</li>
               ))}
             </ul>
-            <Link to={feature.to}>
-              <Button className={'mt-10'}>{feature.cta}</Button>
+            <Link
+              to={feature.to}
+              className={buttonVariants({ className: 'mt-10' })}
+            >
+              {feature.cta}
             </Link>
           </div>
         ))}

@@ -1,5 +1,11 @@
-import { Button } from '#/components/ui/button.tsx'
-import { CalendarIcon, ClockIcon, GraduationCapIcon, UsersIcon } from 'lucide-react'
+import { buttonVariants } from '#/components/ui/button.tsx'
+import { Link } from '@tanstack/react-router'
+import {
+  CalendarIcon,
+  ClockIcon,
+  GraduationCapIcon,
+  UsersIcon,
+} from 'lucide-react'
 
 const highlights = [
   {
@@ -33,7 +39,8 @@ export default function EnrollmentCTA() {
             Start Your Journey
           </p>
           <h2 className="text-primary-foreground text-3xl lg:text-5xl leading-tight">
-            Ready to Build <br />Your Career?
+            Ready to Build <br />
+            Your Career?
           </h2>
           <p className="text-primary-foreground/80 max-w-md">
             Take the first step towards a fulfilling career in wellness, beauty,
@@ -41,20 +48,11 @@ export default function EnrollmentCTA() {
             the enrollment process.
           </p>
         </div>
-        <div className="flex flex-wrap gap-4">
-          <Button variant="secondary">Apply Now</Button>
-          <Button
-            variant="outline"
-            className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-          >
-            Download Brochure
-          </Button>
-        </div>
       </div>
-      <div className="p-8 md:p-14 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="p-8 md:p-14 grid grid-cols-1 sm:grid-cols-2 gap-6 text-center lg:text-start">
         {highlights.map((item, index) => (
           <div key={index} className="space-y-3">
-            <div className="rounded-full bg-primary/10 p-3 w-fit">
+            <div className="rounded-full bg-primary/10 p-3 w-fit mx-auto lg:mx-0">
               <item.Icon className="size-5 text-primary" />
             </div>
             <h3 className="font-bold text-lg">{item.title}</h3>

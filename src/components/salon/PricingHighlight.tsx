@@ -1,24 +1,39 @@
-import { Button } from '#/components/ui/button.tsx'
+import { buttonVariants } from '#/components/ui/button.tsx'
+import { Link } from '@tanstack/react-router'
 
 const packages = [
   {
     name: 'Essential',
     tagline: 'Quick Refresh',
-    description: 'A quick beauty refresh for those on the go — perfect for a pick-me-up before an event or outing.',
+    description:
+      'A quick beauty refresh for those on the go — perfect for a pick-me-up before an event or outing.',
     includes: ['Haircut & Blow Dry', 'Express Facial', 'Basic Manicure'],
   },
   {
     name: 'Signature',
     tagline: 'Most Popular',
-    description: 'Our most popular package combining hair, skin, and nail care for a complete beauty transformation.',
-    includes: ['Hair Styling & Treatment', 'Full Facial with Mask', 'Manicure & Pedicure', 'Eyebrow Shaping'],
+    description:
+      'Our most popular package combining hair, skin, and nail care for a complete beauty transformation.',
+    includes: [
+      'Hair Styling & Treatment',
+      'Full Facial with Mask',
+      'Manicure & Pedicure',
+      'Eyebrow Shaping',
+    ],
     featured: true,
   },
   {
     name: 'Luxe',
     tagline: 'Complete Pampering',
-    description: 'The ultimate beauty experience — a full day of pampering from head to toe for special occasions.',
-    includes: ['Hair Colour & Styling', 'Premium Facial & Mask', 'Gel Manicure & Pedicure', 'Full Makeup Application', 'Relaxation Massage'],
+    description:
+      'The ultimate beauty experience — a full day of pampering from head to toe for special occasions.',
+    includes: [
+      'Hair Colour & Styling',
+      'Premium Facial & Mask',
+      'Gel Manicure & Pedicure',
+      'Full Makeup Application',
+      'Relaxation Massage',
+    ],
   },
 ]
 
@@ -51,7 +66,9 @@ export default function PricingHighlight() {
               >
                 {pkg.tagline}
               </p>
-              <h3 className={`text-2xl font-bold mt-2 ${pkg.featured ? 'text-primary-foreground' : 'text-foreground'}`}>
+              <h3
+                className={`text-2xl font-bold mt-2 ${pkg.featured ? 'text-primary-foreground' : 'text-foreground'}`}
+              >
                 {pkg.name}
               </h3>
             </div>
@@ -63,22 +80,20 @@ export default function PricingHighlight() {
                 <li
                   key={i}
                   className={`flex items-center gap-2 text-sm ${
-                    pkg.featured ? 'text-primary-foreground/90' : 'text-muted-foreground'
+                    pkg.featured
+                      ? 'text-primary-foreground/90'
+                      : 'text-muted-foreground'
                   }`}
                 >
-                  <span className={`size-1.5 rounded-full ${
-                    pkg.featured ? 'bg-primary-foreground' : 'bg-primary'
-                  }`} />
+                  <span
+                    className={`size-1.5 rounded-full ${
+                      pkg.featured ? 'bg-primary-foreground' : 'bg-primary'
+                    }`}
+                  />
                   {item}
                 </li>
               ))}
             </ul>
-            <Button
-              variant={pkg.featured ? 'secondary' : 'default'}
-              className="w-full"
-            >
-              Book This Package
-            </Button>
           </div>
         ))}
       </div>

@@ -6,30 +6,35 @@ const items = [
   {
     title: 'Hair Styling',
     subtitle: 'Cuts, Colour & Styling',
+    image: 'https://htj-client.b-cdn.net/norbu-healing/IMG_4302.JPG.jpeg',
     description:
       'From precision cuts to creative colouring and styling, our expert stylists craft looks that suit your personality and lifestyle.',
   },
   {
     title: 'Skincare',
     subtitle: 'Facials & Skin Treatments',
+    image: 'https://htj-client.b-cdn.net/norbu-healing/IMG_4293.JPG.jpeg',
     description:
       'Rejuvenating facial treatments using premium products to cleanse, nourish, and restore your natural glow.',
   },
   {
     title: 'Nail Art',
     subtitle: 'Manicure & Pedicure',
+    image: 'https://htj-client.b-cdn.net/norbu-healing/IMG_4299.JPG.jpeg',
     description:
       'Professional nail care and creative nail art services to keep your hands and feet looking polished and beautiful.',
   },
   {
     title: 'Bridal',
     subtitle: 'Bridal & Occasion Packages',
+    image: 'https://htj-client.b-cdn.net/norbu-healing/IMG_4306.JPG.jpeg',
     description:
       'Complete beauty packages for weddings and special occasions — hair, makeup, skincare, and nails, all in one place.',
   },
   {
     title: 'Grooming',
-    subtitle: 'Men\'s Grooming Services',
+    subtitle: "Men's Grooming Services",
+    image: 'https://htj-client.b-cdn.net/norbu-healing/IMG_4304.JPG.jpeg',
     description:
       'Professional grooming services for men including haircuts, beard styling, facials, and skincare treatments.',
   },
@@ -68,11 +73,13 @@ function FeatureBlock({
             position === 'left' ? '' : 'md:order-last',
           )}
         >
-          <span className="text-5xl font-bold text-primary-foreground/20">{title}</span>
+          <span className="text-5xl font-bold text-primary-foreground/20">
+            {title}
+          </span>
         </div>
       )}
       <div>
-        <h2 className="mb-2 font-semibold">{title}</h2>
+        <h3 className="mb-2 font-semibold">{title}</h3>
         <p className="text-primary-foreground">{description}</p>
         {featureList && (
           <ul className="my-6 space-y-3 text-primary-foreground">
@@ -107,6 +114,7 @@ export default function ServicesComponent() {
             title={item.title}
             description={item.description}
             featureList={[item.subtitle]}
+            image={item.image}
             position={index % 2 === 0 ? 'right' : 'left'}
           />
         ))}

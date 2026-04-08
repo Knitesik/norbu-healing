@@ -36,7 +36,7 @@ export default function JourneyComponent() {
           seamless and deeply restorative experience.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center lg:text-start">
         {items.map((item, index) => (
           <div key={index} className="relative">
             <div className="space-y-4">
@@ -46,9 +46,6 @@ export default function JourneyComponent() {
               <h3 className="font-bold">{item.title}</h3>
               <p>{item.label}</p>
             </div>
-            {index < items.length - 1 && (
-              <div className="hidden lg:block absolute top-8 right-0 translate-x-1/2 w-8 h-px bg-border" />
-            )}
           </div>
         ))}
       </div>

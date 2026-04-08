@@ -12,6 +12,9 @@ import BookYourStay from '#/components/hotel/BookYourStay.tsx'
 
 export const Route = createFileRoute('/salon')({
   component: RouteComponent,
+  head: () => ({
+    meta: [{ title: 'Norbu Healing Salon' }],
+  }),
 })
 
 function RouteComponent() {

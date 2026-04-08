@@ -6,7 +6,7 @@ export default function OurServicesNew() {
           'lg:col-span-2 p-8 lg:p-10 space-y-4 grid place-content-center *:text-primary-foreground bg-primary'
         }
       >
-        <h2 className={'text-3xl lg:text-5xl text-primary-foreground leading-12 lg:leading-17'}>
+        <h2 className={'text-3xl lg:text-5xl text-primary-foreground leading-tight lg:leading-17'}>
           Wellness and <br />
           Relaxation
         </h2>

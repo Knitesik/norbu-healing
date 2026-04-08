@@ -21,7 +21,7 @@ export default function AboutUs() {
             'bg-background w-fit p-10 max-w-lg space-y-4 text-center lg:text-start'
           }
         >
-          <h2 className={'text-primary font-bold'}>About Us</h2>
+          <h2 className={'text-primary'}>About Us</h2>
           <p>
             Norbu Healing Hotel is a peaceful retreat designed to offer comfort,
             relaxation, and authentic hospitality. Nestled in a serene

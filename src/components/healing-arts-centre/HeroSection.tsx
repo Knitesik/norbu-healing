@@ -1,11 +1,13 @@
-import { Button } from '#/components/ui/button.tsx'
+import { buttonVariants } from '#/components/ui/button.tsx'
+import { Link } from '@tanstack/react-router'
+import Logo from '/healing_arts_logo.jpeg'
 
 export default function HeroSectionNew() {
   return (
     <div className={'grid lg:grid-cols-2 place-content-center'}>
       <div className={'bg-muted relative'}>
         <img
-          src="https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.29%20PM%20(2).jpeg"
+          src="https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-28%20at%202.56.20%20PM.jpeg"
           alt="counter"
           className={'object-cover object-left h-100 lg:h-full'}
         />
@@ -15,12 +17,12 @@ export default function HeroSectionNew() {
         <div
           className={'grid gap-8 lg:w-[80%] mx-auto text-center lg:text-center'}
         >
-          <div>
-            <h3 className={'text-4xl font-bold text-primary'}>Norbu</h3>
-            <p>Healing Hotel</p>
-          </div>
+          <img
+            src={Logo}
+            alt="Hotel Logo"
+            className={'h-15 mx-auto mix-blend-multiply object-cover'}
+          />
           <div className={'space-y-4'}>
-            <p className={'font-bold'}>Norbu Healing Arts Centre</p>
             <h1 className={'leading-20 text-primary font-extrabold!'}>
               Restore. Rebalance.
               <br />
@@ -33,10 +35,21 @@ export default function HeroSectionNew() {
             promote holistic well-being.
           </p>
           <span className={'inline-flex gap-4 space-x-4 mx-auto'}>
-            <Button className={'w-fit mx-auto lg:mx-0'}>Book a Session</Button>
-            <Button variant={'outline'} className={'w-fit mx-auto lg:mx-0'}>
+            <Link
+              to="/healing-arts-centre"
+              className={buttonVariants({ className: 'w-fit mx-auto lg:mx-0' })}
+            >
+              Book a Session
+            </Link>
+            <Link
+              to="/healing-arts-centre"
+              className={buttonVariants({
+                variant: 'outline',
+                className: 'w-fit mx-auto lg:mx-0',
+              })}
+            >
               View Treatments
-            </Button>
+            </Link>
           </span>
         </div>
       </div>

@@ -1,26 +1,26 @@
 const galleryImages = [
   {
-    src: 'https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.29%20PM%20(3).jpeg',
+    src: 'https://htj-client.b-cdn.net/norbu-healing/IMG_4306.JPG.jpeg',
     alt: 'Hair styling session',
     span: 'md:col-span-2 md:row-span-2',
   },
   {
-    src: 'https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.29%20PM%20(4).jpeg',
+    src: 'https://htj-client.b-cdn.net/norbu-healing/IMG_4305.JPG.jpeg',
     alt: 'Skincare treatment',
     span: '',
   },
   {
-    src: 'https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.29%20PM%20(7).jpeg',
+    src: 'https://htj-client.b-cdn.net/norbu-healing/IMG_4302.JPG.jpeg',
     alt: 'Salon interior',
     span: '',
   },
   {
-    src: 'https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.30%20PM%20(3).jpeg',
+    src: 'https://htj-client.b-cdn.net/norbu-healing/IMG_4299.JPG.jpeg',
     alt: 'Beauty products',
     span: '',
   },
   {
-    src: 'https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.30%20PM.jpeg',
+    src: 'https://htj-client.b-cdn.net/norbu-healing/IMG_4296.JPG.jpeg',
     alt: 'Nail art display',
     span: 'md:col-span-2',
   },
@@ -39,10 +39,7 @@ export default function GallerySection() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {galleryImages.map((image, index) => (
-          <div
-            key={index}
-            className={`overflow-hidden group ${image.span}`}
-          >
+          <div key={index} className={`overflow-hidden group ${image.span}`}>
             <img
               src={image.src}
               alt={image.alt}

@@ -46,11 +46,11 @@ export default function CurriculumOverview() {
           professional certification in a supportive, hands-on environment.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center lg:text-start">
         {phases.map((phase, index) => (
           <div key={index} className="relative">
             <div className="space-y-4">
-              <div className="rounded-full bg-primary/10 p-4 w-fit">
+              <div className="rounded-full mx-auto lg:mx-0 bg-primary/10 p-4 w-fit">
                 <phase.Icon className="size-6 text-primary" />
               </div>
               <div>
@@ -58,13 +58,13 @@ export default function CurriculumOverview() {
                   {phase.phase}
                 </p>
                 <h3 className="font-bold text-lg mt-1">{phase.title}</h3>
-                <p className="text-sm text-muted-foreground mt-1">{phase.duration}</p>
+                <p className="text-sm text-muted-foreground mt-1">
+                  {phase.duration}
+                </p>
               </div>
               <p className="text-sm">{phase.description}</p>
             </div>
-            {index < phases.length - 1 && (
-              <div className="hidden lg:block absolute top-8 right-0 translate-x-1/2 w-8 h-px bg-border" />
-            )}
+
           </div>
         ))}
       </div>

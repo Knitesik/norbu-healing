@@ -1,4 +1,6 @@
-import { Button } from '#/components/ui/button.tsx'
+import { buttonVariants } from '#/components/ui/button.tsx'
+import { Link } from '@tanstack/react-router'
+import Logo from '/logo.jpeg'
 
 export default function HeroSection() {
   return (
@@ -8,8 +10,11 @@ export default function HeroSection() {
           className={'grid gap-8 lg:w-[80%] mx-auto text-center lg:text-center'}
         >
           <div>
-            <h3 className={'text-4xl font-bold text-primary'}>Norbu</h3>
-            <p>Healing Hotel</p>
+            <img
+              src={Logo}
+              alt="Hotel Logo"
+              className={'h-15 mx-auto mix-blend-multiply object-cover'}
+            />
           </div>
           <div className={'space-y-4'}>
             <p className={'font-bold'}>Norbu Institute of Wellness & Beauty</p>
@@ -25,16 +30,27 @@ export default function HeroSection() {
             programmes.
           </p>
           <span className={'inline-flex gap-4 space-x-4 mx-auto'}>
-            <Button className={'w-fit mx-auto lg:mx-0'}>Explore Courses</Button>
-            <Button variant={'outline'} className={'w-fit mx-auto lg:mx-0'}>
+            <Link
+              to="/institute"
+              className={buttonVariants({ className: 'w-fit mx-auto lg:mx-0' })}
+            >
+              Explore Courses
+            </Link>
+            <Link
+              to="/institute"
+              className={buttonVariants({
+                variant: 'outline',
+                className: 'w-fit mx-auto lg:mx-0',
+              })}
+            >
               Apply Now
-            </Button>
+            </Link>
           </span>
         </div>
       </div>
       <div className={'bg-muted relative'}>
         <img
-          src="https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-25%20at%202.04.29%20PM%20(8).jpeg"
+          src="https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-28%20at%202.56.20%20PM.jpeg"
           alt="institute"
           className={'object-cover object-left h-100 lg:h-full'}
         />

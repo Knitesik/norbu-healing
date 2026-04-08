@@ -1,4 +1,6 @@
-import { Button } from '#/components/ui/button.tsx'
+import { buttonVariants } from '#/components/ui/button.tsx'
+import { Link } from '@tanstack/react-router'
+import Logo from '/logo.jpeg'
 
 export default function HeroSectionNew() {
   return (
@@ -7,10 +9,11 @@ export default function HeroSectionNew() {
         <div
           className={'grid gap-8 lg:w-2/3 mx-auto text-center lg:text-center'}
         >
-          <div>
-            <h3 className={'text-4xl font-bold text-primary'}>Norbu</h3>
-            <p>Healing Hotel</p>
-          </div>
+          <img
+            src={Logo}
+            alt="Hotel Logo"
+            className={'h-15 mx-auto mix-blend-multiply object-cover'}
+          />
           <div className={'space-y-4'}>
             <p className={'font-bold'}>Changjalu · Olakha · Thimphu · Bhutan</p>
             <h1 className={'leading-20 text-primary font-extrabold!'}>
@@ -24,12 +27,21 @@ export default function HeroSectionNew() {
             professional training — all under one roof in the heart of Thimphu.
           </p>
           <span className={'inline-flex gap-4 space-x-4 mx-auto'}>
-            <Button className={'w-fit mx-auto lg:mx-0'}>
+            <Link
+              to="/hotel"
+              className={buttonVariants({ className: 'w-fit mx-auto lg:mx-0' })}
+            >
               Explore Our Rooms
-            </Button>
-            <Button variant={'outline'} className={'w-fit mx-auto lg:mx-0'}>
+            </Link>
+            <Link
+              to="/healing-arts-centre"
+              className={buttonVariants({
+                variant: 'outline',
+                className: 'w-fit mx-auto lg:mx-0',
+              })}
+            >
               View Our Services
-            </Button>
+            </Link>
           </span>
         </div>
       </div>

@@ -6,6 +6,8 @@ const items = [
   {
     title: 'Signature',
     subtitle: 'Traditional Therapeutic Massage',
+    image:
+      'https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-28%20at%202.56.20%20PM%20(4).jpeg',
     description:
       "Deep tissue work grounded in traditional techniques, targeting tension and restoring the body's natural energy flow and balance.",
   },
@@ -13,6 +15,7 @@ const items = [
   {
     title: 'Sensory',
     subtitle: 'Aromatherapy Massage',
+    image: 'https://htj-client.b-cdn.net/norbu-healing/Untitled.jpg',
     description:
       'A gentle, full-body massage using premium essential oils chosen for their calming and restorative properties.',
   },
@@ -20,6 +23,8 @@ const items = [
   {
     title: 'Detox',
     subtitle: 'Body Treatments & Detox',
+    image:
+      'https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-28%20at%202.56.20%20PM%20(2).jpeg',
     description:
       "Natural botanicals in wraps and scrubs to purify the skin and stimulate the body's lymphatic system.",
   },
@@ -27,6 +32,8 @@ const items = [
   {
     title: 'Wellness',
     subtitle: 'Stress Relief Therapies',
+    image:
+      'https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-28%20at%202.56.20%20PM%20(4).jpeg',
     description:
       'Personalised sessions combining pressure point work, breathwork guidance, and gentle therapeutic touch.',
   },
@@ -34,6 +41,8 @@ const items = [
   {
     title: 'Holistic',
     subtitle: 'Holistic Healing Sessions',
+    image:
+      'https://htj-client.b-cdn.net/norbu-healing/WhatsApp%20Image%202026-03-28%20at%202.56.20%20PM%20(3).jpeg',
     description:
       'Whole-body sessions drawing on multiple modalities for physical, mental, and energetic balance.',
   },
@@ -72,11 +81,13 @@ function FeatureBlock({
             position === 'left' ? '' : 'md:order-last',
           )}
         >
-          <span className="text-5xl font-bold text-primary-foreground/20">{title}</span>
+          <span className="text-5xl font-bold text-primary-foreground/20">
+            {title}
+          </span>
         </div>
       )}
       <div>
-        <h2 className="mb-2 font-semibold">{title}</h2>
+        <h3 className="mb-2 font-semibold">{title}</h3>
         <p className="text-primary-foreground">{description}</p>
         {featureList && (
           <ul className="my-6 space-y-3 text-primary-foreground">
@@ -112,6 +123,7 @@ export default function TreatmentComponent() {
             description={item.description}
             featureList={[item.subtitle]}
             position={index % 2 === 0 ? 'right' : 'left'}
+            image={item.image}
           />
         ))}
       </div>

@@ -1,20 +1,23 @@
-import { Button } from '#/components/ui/button.tsx'
+import { buttonVariants } from '#/components/ui/button.tsx'
+import { Link } from '@tanstack/react-router'
+import Logo from '/healing_hotel_logo.jpeg'
 
 export default function HeroSectionNew() {
   return (
     <div className={'grid lg:grid-cols-2 place-content-center'}>
       <div className={'p-7 lg:p-14'}>
-        <div className={'grid gap-8 lg:w-2/3 text-center lg:text-start'}>
-          <div>
-            <h3 className={'text-4xl font-bold text-primary'}>Norbu</h3>
-            <p>Healing Hotel</p>
-          </div>
+        <div
+          className={'grid gap-8 lg:w-2/3 mx-auto text-center lg:text-center'}
+        >
+          <img
+            src={Logo}
+            alt="Logo"
+            className={'h-20 mix-blend-multiply object-cover mx-auto'}
+          />
           <div className={'space-y-4'}>
-            <p className={'font-bold'}>WELCOME TO</p>
-            <h1 className={'leading-20 text-primary font-extrabold! lg:italic'}>
-              NORBU
-              <br />
-              HEALING
+            <p className={'font-bold'}>Changjalu · Olakha · Thimphu · Bhutan</p>
+            <h1 className={'leading-20 text-primary font-extrabold!'}>
+              NORBU HEALING
               <br />
               HOTEL
             </h1>
@@ -24,7 +27,15 @@ export default function HeroSectionNew() {
             impeccable service, refined style, and world-class amenities come
             together to create an extraordinary stay.
           </p>
-          <Button className={'w-fit mx-auto lg:mx-0'}>Explore Our Rooms</Button>
+          <Link
+            to="/hotel"
+            className={buttonVariants({
+              variant: 'outline',
+              className: 'w-fit mx-auto',
+            })}
+          >
+            View Our Services
+          </Link>
         </div>
       </div>
       <div className={'bg-muted relative'}>

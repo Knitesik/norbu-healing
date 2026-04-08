@@ -35,11 +35,11 @@ export default function Testimonial() {
                     <div className="p-2 pb-5">
                       <div className="text-center">
                         <QuoteIcon className=" mx-auto my-4 text-4xl" />
-                        <h4 className="text-1xl mx-auto max-w-lg px-10 font-semibold">
+                        <h4 className="text-xl mx-auto max-w-lg px-10 font-semibold">
                           {getTestimonialQuote(index)}
                         </h4>
                         <div>
-                          <h4 className="text-1xl my-2 font-semibold">
+                          <h4 className="text-xl my-2 font-semibold">
                             {getTestimonialName(index)}
                           </h4>
                         </div>
