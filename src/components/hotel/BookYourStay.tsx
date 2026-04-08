@@ -4,15 +4,22 @@ import { GlobeIcon, MailIcon, MapIcon, PhoneIcon } from 'lucide-react'
 
 const contactDetails = [
   {
-    Icon: MailIcon,
-    label: 'Email',
-    value: 'norbuhealinghotel@gmail.com',
+    Icon: PhoneIcon,
+    label: 'Norbu Healing Arts Centre',
+    value: '17714050/77714050/02341192',
   },
+  { Icon: PhoneIcon, label: 'Norbu Healing Hotel', value: '17534016' },
+  { Icon: PhoneIcon, label: 'Norbu Healing Salon', value: '17966100' },
   {
     Icon: PhoneIcon,
-    label: 'Telephone',
-    value: '+975 17534016 / 02341550',
+    label: 'Norbu International Wellness Institute',
+    value: '77966100',
   },
+  // {
+  //   Icon: PhoneIcon,
+  //   label: 'Telephone',
+  //   value: '+975 17534016 / 02341550',
+  // },
   {
     Icon: MapIcon,
     label: 'Address',
@@ -29,7 +36,11 @@ export default function BookYourStay() {
   return (
     <div className={'grid lg:grid-cols-2 bg-primary'}>
       <div className={'p-6 md:p-10 *:text-primary-foreground space-y-8'}>
-        <h2 className={'text-3xl lg:text-5xl text-primary-foreground leading-tight lg:leading-17'}>
+        <h2
+          className={
+            'text-3xl lg:text-5xl text-primary-foreground leading-tight lg:leading-17'
+          }
+        >
           Book Your Stay Today!
         </h2>
         <p className={'lg:w-1/2'}>
@@ -39,7 +50,10 @@ export default function BookYourStay() {
         </p>
         <Link
           to="/hotel"
-          className={buttonVariants({ variant: 'secondary', className: 'text-accent-foreground!' })}
+          className={buttonVariants({
+            variant: 'secondary',
+            className: 'text-accent-foreground!',
+          })}
         >
           Book Now
         </Link>
