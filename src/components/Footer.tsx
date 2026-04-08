@@ -103,10 +103,6 @@ export default function Footer() {
                 <span>Changjalu, Olakha, Thimphu, Bhutan</span>
               </div>
               <div className="flex items-center gap-2">
-                <PhoneIcon className="size-4 shrink-0" />
-                <span>+975 17534016 / 02341550</span>
-              </div>
-              <div className="flex items-center gap-2">
                 <MailIcon className="size-4 shrink-0" />
                 <span>norbuhealinghotel@gmail.com</span>
               </div>
@@ -120,20 +116,6 @@ export default function Footer() {
           <p className="text-xs text-primary-foreground/60">
             © 2026 Norbu Healing Hotel. All rights reserved.
           </p>
-          <div className="flex gap-4 text-xs text-primary-foreground/60">
-            <a
-              href="#"
-              className="hover:text-primary-foreground transition-colors"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="hover:text-primary-foreground transition-colors"
-            >
-              Terms of Service
-            </a>
-          </div>
         </div>
       </div>
     </footer>

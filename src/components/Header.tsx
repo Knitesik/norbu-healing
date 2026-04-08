@@ -34,7 +34,6 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-          <ThemeToggle />
           <Button
             variant="ghost"
             size="icon"
