@@ -6,7 +6,7 @@ const contactDetails = [
   {
     Icon: PhoneIcon,
     label: 'Norbu Healing Arts Centre',
-    value: '17714050/77714050/02341192',
+    value: '17714050 / 77714050 / 02341192',
   },
   { Icon: PhoneIcon, label: 'Norbu Healing Hotel', value: '17534016' },
   { Icon: PhoneIcon, label: 'Norbu Healing Salon', value: '17966100' },
@@ -64,17 +64,11 @@ export default function BookYourStay() {
         >
           {contactDetails.map((contact, index) => (
             <div key={index}>
-              <span
-                className={
-                  'flex gap-2 items-center dark:text-primary-foreground text-primary'
-                }
-              >
+              <span className={'flex gap-2 items-center text-primary'}>
                 <contact.Icon size={20} />
                 <h4 className={'text-lg font-bold'}>{contact.label}</h4>
               </span>
-              <p className={'dark:text-primary-foreground text-primary/80'}>
-                {contact.value}
-              </p>
+              <p className={'text-primary'}>{contact.value}</p>
             </div>
           ))}
         </div>
